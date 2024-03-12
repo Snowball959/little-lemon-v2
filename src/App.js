@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Routing from "./components/Routing";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <head>
+
+    <meta name="description" content="Little Lemon Restaurant"/>
+    <meta name="og:description" content="Little Lemon Restaurant"/>
+    <meta name="og:image" content="https://little-lemon-restaurant-project.netlify.app/static/media/Logo%20Footer.2c859235d6c57bb54176.png"/>
+    <meta name="og:title" content="Little Lemon"/>
+
+    </head>
+      <Navbar />
+      <Routing />
+      <Footer />
+    </>
   );
 }
 
